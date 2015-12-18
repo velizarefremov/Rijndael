@@ -1,0 +1,23 @@
+## Clock pin for Nexys 2 Board
+#NET "clk2"         LOC = "E12";    # Bank = 0, Pin name = IP_L13P_0/GCLK8, Type = GCLK,                 Sch name = GCLK0
+#NET "clk1"        LOC = "U9";    # Bank = 2, Pin name = IO_L13P_2/D4/GCLK14, Type = DUAL/GCLK,        Sch name = GCLK1
+
+
+## onBoard USB controller
+## NOTE: DEPP and DSTM net names use some of the same pins, if trying to use both DEPP and DSTM use a signle net name for each shared pin.
+
+## Data bus for both the DEPP and DSTM interfaces uncomment lines 20-27 if using either one
+NET "dout<0>"       LOC = "R20";   # Bank = 2, Pin name = IO_L24N_2/A20, Type = DUAL,                   Sch name = U-FD0
+NET "dout<1>"       LOC = "T19";   # Bank = 2, Pin name = IO_L22N_2/A22, Type = DUAL,                   Sch name = U-FD1
+NET "dout<2>"       LOC = "U20";   # Bank = 2, Pin name = IO_L22P_2/A23, Type = DUAL,                   Sch name = U-FD2
+NET "dout<3>"       LOC = "U19";   # Bank = 2, Pin name = IO_L20P_2, Type = I/O,                        Sch name = U-FD3
+NET "dout<4>"       LOC = "V19";   # Bank = 2, Pin name = IO_L18N_2, Type = I/O,                        Sch name = U-FD4
+NET "dout<5>"       LOC = "V20";   # Bank = 2, Pin name = IO, Type = I/O,                               Sch name = U-FD5
+NET "dout<6>"       LOC = "Y22";   # Bank = 2, Pin name = IO_L15N_2/D1/GCLK3, Type = DUAL/GCLK,         Sch name = U-FD6
+NET "dout<7>"       LOC = "W21";   # Bank = 2, Pin name = IO_L15P_2/D2/GCLK2, Type = DUAL/GCLK,  
+
+
+NET "add<0>"       LOC = "V8"; 
+NET "add<1>"       LOC = "U10"; 
+NET "add<2>"       LOC = "U8"; 
+NET "invbytes"		 LOC = "T9"; 
